@@ -94,6 +94,35 @@ npm run build
   - `email`: 邮箱输入框标签
   - `message`: 消息输入框标签
   - `submit`: 提交按钮文本
+- `emailjs`: EmailJS 配置
+  - `service_id`: EmailJS 服务 ID（从 EmailJS 控制面板获取）
+  - `template_id`: EmailJS 模板 ID（从 EmailJS 控制面板获取）
+  - `public_key`: EmailJS 公钥（从 EmailJS 控制面板获取）
+  - `to_email`: 接收邮件的邮箱地址
+
+## EmailJS 配置说明
+
+1. 注册 [EmailJS](https://www.emailjs.com/) 账号
+2. 创建 Email Service（邮件服务）：
+   - 登录后点击 "Email Services"
+   - 点击 "Add New Service"
+   - 选择邮件服务商（如 Gmail、Outlook 等）
+   - 按照步骤连接您的邮箱账号
+   - 完成后会得到一个 `Service ID`
+3. 创建 Email Template（邮件模板）：
+   - 点击 "Email Templates"
+   - 点击 "Create New Template"
+   - 设计邮件模板，可以使用以下变量：
+     - `{{from_name}}` - 发送者姓名
+     - `{{from_email}}` - 发送者邮箱
+     - `{{message}}` - 消息内容
+     - `{{to_email}}` - 接收者邮箱
+   - 保存后会得到一个 `Template ID`
+4. 获取 Public Key：
+   - 在 EmailJS 控制面板的 "Account" 页面
+   - 找到 "API Keys" 部分
+   - 复制 `Public Key`
+5. 在 `src/config/content.json` 中配置这些信息
 
 ## 自定义样式
 
