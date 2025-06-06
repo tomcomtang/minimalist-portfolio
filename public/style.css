@@ -193,7 +193,28 @@ header {
   align-items: start;
 }
 
-.hero-container .up{
+.hero-container h1 {
+  font-size: 50px;
+  color: #212529;
+  font-family: 'Permanent Marker', cursive;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-container h1 .auto-type {
+  color: #695aa6;
+}
+
+.hero-container .up {
+  font-size: 50px;
+  color: #212529;
+  font-family: Leckerli One, sans-serif;
+  margin-bottom: 5px;
+}
+
+.hero-container .down {
   font-size: 50px;
   color: #212529;
   font-family: Leckerli One, sans-serif;
@@ -206,24 +227,6 @@ header {
   float: left;
 }
 
-.hero-container .down{
-  font-family: 'Quicksand', sans-serif !important;
-  font-size: 3.5rem;
-  color: #fff;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.hero-container h1{
-  margin: 0;
-  color: #212529;
-  font-family: Patrick Hand, cursive;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
 .over{
   position: absolute;
   top: 0;
@@ -231,6 +234,10 @@ header {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+}
+
+.hero-container .botton {
+  margin-top: 24px;
 }
 
 .hero-container .botton a{
@@ -249,16 +256,13 @@ header {
     height: 80vh;
   }
 
-  .hero-container .up {
-    font-size: 35px;
-  }
-
-  .hero-container .down {
-    font-size: 45px;
-  }
-
   .hero-container h1 {
-    font-size: 25px;
+    font-size: 40px;
+  }
+  
+  .hero-container .up,
+  .hero-container .down {
+    font-size: 40px;
   }
 
   .hero-container .botton img {
@@ -273,16 +277,13 @@ header {
     height: 80vh;
   }
 
-  .hero-container .up {
-    font-size: 25px;
-  }
-
-  .hero-container .down {
-    font-size: 35px;
-  }
-
   .hero-container h1 {
-    font-size: 20px;
+    font-size: 30px;
+  }
+  
+  .hero-container .up,
+  .hero-container .down {
+    font-size: 30px;
   }
 
   .hero-container .botton img {
@@ -416,6 +417,7 @@ header {
   display: block;
   width: 100%;
   background-color: #f9f9f9;
+  padding: 30px 0;
 }
 
 .Skills .container {
@@ -443,6 +445,7 @@ header {
 .Skills .container .heading h1{
   padding: 0%;
   margin: 0%;
+  font-size: 24px;
 }
 
 .Skills .container .heading h1::after {
@@ -787,7 +790,7 @@ h1 span {
 
 .project {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   min-height: auto;
   padding: 30px 0;
@@ -795,21 +798,24 @@ h1 span {
   font-weight: 400;
 }
 
-.main {
-  width: calc(min(76.5rem, 90%));
-  color: #111;
+.project .main {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.main h2 {
+.project .main h1 {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Leckerli One', sans-serif;
   font-size: 24px;
   position: relative;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
-.main h2::after {
+.project .main h1::after {
   content: '';
   position: absolute;
   bottom: -10px;
@@ -821,13 +827,9 @@ h1 span {
   border-radius: 2px;
 }
 
-.main a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-.container {
-  margin-top: 1.5em;
+.project .container {
+  width: calc(min(76.5rem, 90%));
+  margin-top: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 2rem;
@@ -836,12 +838,34 @@ h1 span {
 .card {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .card:nth-child(1) .box .icon .iconBox,
 .card:nth-child(2) .box .icon .iconBox,
 .card:nth-child(3) .box .icon .iconBox {
   background: #695aa6;
+}
+
+.card .content {
+  padding: 0.938rem 0.625rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .content h3 {
+  text-transform: capitalize;
+  font-family: 'Patrick Hand', cursive;
+  font-size: clamp(1.5rem, 1.3909rem + 0.4364vw, 1.8rem);
+  margin-bottom: 0.625rem;
+}
+
+.card .content p {
+  margin: 0.625rem 0 1.25rem;
+  font-family: 'Patrick Hand', cursive;
+  color: #565656;
+  flex: 1;
 }
 
 .card ul {
@@ -870,20 +894,13 @@ h1 span {
   color: white;
 }
 
-.card .content {
-  padding: 0.938rem 0.625rem;
+.card ul a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.card .content h3 {
-  text-transform: capitalize;
-  font-family: 'Patrick Hand', cursive;
-  font-size: clamp(1.5rem, 1.3909rem + 0.4364vw, 1.8rem);
-}
-
-.card .content p {
-  margin: 0.625rem 0 1.25rem;
-  font-family: 'Patrick Hand', cursive;
-  color: #565656;
+.card ul a:hover li {
+  background: #564a8a;
 }
 
 .card-inner {
@@ -939,65 +956,63 @@ h1 span {
   transition: 0.3s;
 }
 
-.card-inner .box .icon .iconBox i {
-  color: #fff;
-  font-size: 1.5rem;
-  transform: rotate(-45deg);
+.card-inner .box .icon .iconBox:hover {
+  background: #695aa6;
 }
 
-.card-inner .box .icon .iconBox span {
-  color: #fff;
-  font-size: 1.5rem;
+.card-inner .box .icon .iconBox img {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: brightness(0) invert(1);
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
   .container {
-      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-      gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1.5rem;
   }
-
+  
   .card-inner {
-      height: 15rem;
+    height: 15rem;
   }
-
+  
   .card .content h3 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
-
+  
   .card .content p {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
   .main h2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .container {
-      grid-template-columns: 1fr;
-      gap: 1rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
-
+  
   .card-inner {
-      height: 12rem;
+    height: 12rem;
   }
-
+  
   .card .content h3 {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
-
+  
   .card .content p {
-      font-size: 0.8rem;
+    font-size: 0.8rem;
   }
-
+  
   .card ul li {
-      font-size: 0.7rem;
-      padding: 0.3rem 0.5rem;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
   }
 }
-
 
 /* project section CSS ends here  */
 /* --------------------------------------------------------------------- */

@@ -48,44 +48,67 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <>
+      <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+      </head>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Leckerli+One&family=Lilita+One&family=Patrick+Hand&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+      <link href="/style.css" rel="stylesheet" />
+
       <header>
-        <div className="navBar">
+        <nav id="navBar" className="navBar">
           <div className="name">
             <h1>{content.nav.name}</h1>
           </div>
-          <div className="menu">
+          <div className="menu-toggle" id="menuToggle">
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
+          <div className="menu" id="menu">
             <ul>
               {content.nav.menu.map((item, index) => (
-                <li key={index}>
-                  <a href={item.link}>{item.text}</a>
-                </li>
+                <li key={index}><a href={item.link}>{item.text}</a></li>
               ))}
             </ul>
           </div>
-          <div className="menu-toggle">
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
-          </div>
-        </div>
+        </nav>
       </header>
 
-      <section className="hero" id="home">
+      <section className="hero" id="home" style={{ backgroundImage: "url('/images/about.jpg')" }}>
+        <div className="over"></div>
         <div className="hero-container">
-          <p className="up">{content.hero.greeting}</p>
-          <h1 className="down">{content.hero.name}</h1>
-          <p>{content.hero.title}</p>
-          <p>{content.hero.description}</p>
+          <h1>
+            <p className="up">{content.hero.greeting}</p><br />
+            {/* <p className="down">{content.hero.name}</p> */}
+          </h1>
+          <h1>I'm <span className="auto-type">{content.hero.name}</span></h1>
+          <div className="botton">
+            {content.contact.social.map((social, index) => (
+              <a key={index} href={social.link} target="_blank">
+                <img src={`/images/${social.icon}.svg`} alt={social.name} />
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
       <section className="about" id="about">
         <div className="about-container">
+          <div className="imgeffect">
+            <img src="/images/pic2.jpg" alt="" />
+          </div>
           <div className="text">
+            <p className="p1">Who Am I?</p>
             <h2>{content.about.title}</h2>
-            <p className="p1">{content.about.description}</p>
-            <button>{content.about.button}</button>
+            <p className="p2">{content.about.description}</p>
+            <a href="/images/My_Resume.pdf" target="_blank"><button>{content.about.button}</button></a>
           </div>
         </div>
       </section>
@@ -93,27 +116,59 @@ export default function Home() {
       <section className="Skills" id="skills">
         <div className="container">
           <div className="heading">
-            <h1>{content.skills.title}</h1>
+            <h1 className="skillh1">{content.skills.title}</h1>
           </div>
           <div className="mainSkill">
-            {content.skills.categories.map((category, index) => (
-              <div key={index} className={category.title.toLowerCase()}>
-                <h2>{category.title}</h2>
-                <div className={`${category.title.toLowerCase()}Skill`}>
-                  {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="box">
-                      <img src={skill.image} alt={skill.name} />
-                    </div>
-                  ))}
-                </div>
+            <div className="front">
+              <h2>Frontend</h2>
+              <div className="box">
+                {content.skills.categories[0].skills.map((skill, index) => (
+                  <div key={index} className="frontSkill">
+                    <img src={skill.image} alt="" />
+                    {skill.name}
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+            <div className="back">
+              <h2>Backend</h2>
+              <div className="box">
+                {content.skills.categories[1].skills.map((skill, index) => (
+                  <div key={index} className="backSkill">
+                    <img src={skill.image} alt="" />
+                    {skill.name}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="datasci">
+              <h2>Data Science</h2>
+              <div className="box">
+                {content.skills.categories[2].skills.map((skill, index) => (
+                  <div key={index} className="datasciSkill">
+                    <img src={skill.image} alt="" />
+                    {skill.name}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="tools">
+              <h2>Tools</h2>
+              <div className="box">
+                {content.skills.categories[3].skills.map((skill, index) => (
+                  <div key={index} className="toolsSkill">
+                    <img src={skill.image} alt="" />
+                    {skill.name}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="expirience" id="experience">
-        <h1>{content.experience.title}</h1>
+        <h1 className="skillh1">{content.experience.title}</h1>
         <div className="container-ex">
           {content.experience.timeline.map((item, index) => (
             <div key={index} className={`timeline-block timeline-block-${index % 2 === 0 ? 'right' : 'left'}`}>
@@ -135,35 +190,29 @@ export default function Home() {
         <div className="container">
           {content.projects.items.map((project, index) => (
             <div key={index} className="card">
-              <div className="card-inner">
+              <div className="card-inner" style={{ '--clr': '#fff' } as React.CSSProperties}>
                 <div className="box">
                   <div className="imgBox">
                     <img src={project.image} alt={project.title} />
                   </div>
                   <div className="icon">
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <div className="iconBox">
-                        <i className="fa fa-arrow-right"></i>
-                      </div>
+                    <a href={project.github} className="iconBox" target="_blank" rel="noopener noreferrer">
+                      <img src="/images/arrow.svg" alt="arrow" className="arrow-icon" />
                     </a>
                   </div>
                 </div>
               </div>
-              <ul>
-                <li className="github">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-github"></i>
-                  </a>
-                </li>
-              </ul>
               <div className="content">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <div className="technologies">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex}>{tech}</span>
-                  ))}
-                </div>
+                <ul>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <li className="github">github</li>
+                  </a>
+                  <a href={project.site} target="_blank" rel="noopener noreferrer">
+                    <li className="site">visit site</li>
+                  </a>
+                </ul>
               </div>
             </div>
           ))}
@@ -176,37 +225,29 @@ export default function Home() {
         </div>
         <div className="contact-container">
           <div className="contact-info">
-            <h2>Get in Touch</h2>
-            <p>Email: {content.contact.info.email}</p>
-            <p>Phone: {content.contact.info.phone}</p>
-            <p>Location: {content.contact.info.location}</p>
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
             <div className="social-links">
               {content.contact.social.map((social, index) => (
-                <a key={index} href={social.link} target="_blank" rel="noopener noreferrer">
-                  <img src={`/images/${social.icon}.png`} alt={social.name} />
+                <a key={index} href={social.link} target="_blank">
+                  <img src={`/images/${social.icon}.svg`} alt={social.name} />
                 </a>
               ))}
             </div>
           </div>
           <div className="contact-form">
             <form>
-              <label>
-                {content.contact.form.name}
-                <input type="text" required />
-              </label>
-              <label>
-                {content.contact.form.email}
-                <input type="email" required />
-              </label>
-              <label>
-                {content.contact.form.message}
-                <textarea required></textarea>
-              </label>
+              <label htmlFor="name">{content.contact.form.name}</label>
+              <input type="text" id="name" name="name" required />
+              <label htmlFor="email">{content.contact.form.email}</label>
+              <input type="email" id="email" name="email" required />
+              <label htmlFor="message">{content.contact.form.message}</label>
+              <textarea id="message" name="message" rows={5} required></textarea>
               <button type="submit">{content.contact.form.submit}</button>
             </form>
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 } 

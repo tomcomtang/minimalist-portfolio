@@ -1,6 +1,6 @@
 {
   "nav": {
-    "name": "Tomcom",
+    "name": "Your Name",
     "menu": [
       {
         "text": "Home",
@@ -29,14 +29,14 @@
     ]
   },
   "hero": {
-    "greeting": "Hello, I'm",
-    "name": "Tomcom",
-    "title": "Full Stack Developer",
-    "description": "I'm a passionate full stack developer with expertise in building modern web applications. I love creating elegant solutions to complex problems."
+    "greeting": "Hello!",
+    "name": "Your Name",
+    "title": "This is my portfolio",
+    "description": "Write a brief introduction about yourself here. This will be displayed in the hero section."
   },
   "about": {
     "title": "About Me",
-    "description": "I am a full stack developer with a passion for creating beautiful and functional web applications. I have experience in both front-end and back-end development, and I love learning new technologies and solving complex problems.",
+    "description": "Write a detailed description about yourself, your background, and your interests. This section helps visitors get to know you better.",
     "button": "Download CV"
   },
   "skills": {
@@ -51,7 +51,7 @@
           },
           {
             "name": "CSS",
-            "image": "/images/css.png"
+            "image": "/images/Css.png"
           },
           {
             "name": "JavaScript",
@@ -62,8 +62,8 @@
             "image": "/images/react.png"
           },
           {
-            "name": "Next.js",
-            "image": "/images/nextjs.png"
+            "name": "Bootstrap",
+            "image": "/images/bootstrap.jpg"
           }
         ]
       },
@@ -76,15 +76,19 @@
           },
           {
             "name": "Express",
-            "image": "/images/express.png"
+            "image": "/images/express-js.png"
           },
           {
             "name": "MongoDB",
-            "image": "/images/mongodb.png"
+            "image": "/images/mongo.png"
+          },
+          {
+            "name": "MySQL",
+            "image": "/images/mysql.png"
           },
           {
             "name": "PostgreSQL",
-            "image": "/images/postgresql.png"
+            "image": "/images/post.png"
           }
         ]
       },
@@ -97,15 +101,31 @@
           },
           {
             "name": "TensorFlow",
-            "image": "/images/tensorflow.png"
+            "image": "/images/tensor.png"
           },
           {
             "name": "PyTorch",
-            "image": "/images/pytorch.png"
+            "image": "/images/deep.png"
           },
           {
             "name": "Scikit-learn",
-            "image": "/images/scikit-learn.png"
+            "image": "/images/scikit.png"
+          },
+          {
+            "name": "Pandas",
+            "image": "/images/pandas.png"
+          },
+          {
+            "name": "NumPy",
+            "image": "/images/numpy.png"
+          },
+          {
+            "name": "Matplotlib",
+            "image": "/images/matplot.png"
+          },
+          {
+            "name": "Seaborn",
+            "image": "/images/seaborn.png"
           }
         ]
       },
@@ -117,12 +137,20 @@
             "image": "/images/git.png"
           },
           {
-            "name": "Docker",
-            "image": "/images/docker.png"
+            "name": "VS Code",
+            "image": "/images/vscode.jpg"
           },
           {
-            "name": "VS Code",
-            "image": "/images/vscode.png"
+            "name": "Jupyter",
+            "image": "/images/jupyter.png"
+          },
+          {
+            "name": "Figma",
+            "image": "/images/figma.png"
+          },
+          {
+            "name": "Canva",
+            "image": "/images/canva.jpg"
           }
         ]
       }
@@ -132,16 +160,16 @@
     "title": "Experience",
     "timeline": [
       {
-        "title": "Full Stack Developer",
-        "company": "Tech Company",
-        "period": "2022 - Present",
-        "description": "Developed and maintained web applications using React, Node.js, and MongoDB. Implemented new features and fixed bugs."
+        "title": "Job Title",
+        "company": "Company Name",
+        "period": "Duration",
+        "description": "Describe your responsibilities and achievements in this role. Highlight key projects and skills used."
       },
       {
-        "title": "Frontend Developer",
-        "company": "Design Studio",
-        "period": "2020 - 2022",
-        "description": "Created responsive and interactive user interfaces using HTML, CSS, and JavaScript. Collaborated with designers and backend developers."
+        "title": "Previous Job Title",
+        "company": "Previous Company",
+        "period": "Duration",
+        "description": "Describe your previous role, responsibilities, and achievements. Focus on relevant experience and skills."
       }
     ]
   },
@@ -149,25 +177,28 @@
     "title": "Projects",
     "items": [
       {
-        "title": "Code-Blog",
-        "description": "A blog platform for developers to share their knowledge and experiences.",
-        "technologies": ["React", "Node.js", "MongoDB"],
-        "github": "https://github.com/yourusername/code-blog",
-        "image": "/images/project1.jpg"
+        "title": "Project Name",
+        "description": "Write a brief description of your project. Explain what it does and what technologies you used.",
+        "technologies": ["List", "Your", "Technologies"],
+        "github": "https://github.com/tomcomtang/minimalist-portfolio",
+        "site": "https://your-project-demo.com",
+        "image": "/images/project-1-cover.jpg"
       },
       {
-        "title": "Visionary",
-        "description": "An AI-powered image recognition application.",
-        "technologies": ["Python", "TensorFlow", "React"],
-        "github": "https://github.com/yourusername/visionary",
-        "image": "/images/project2.jpg"
+        "title": "Another Project",
+        "description": "Describe another project. Include the problem it solves and your role in development.",
+        "technologies": ["List", "Your", "Technologies"],
+        "github": "https://github.com/tomcomtang/minimalist-portfolio",
+        "site": "https://another-project-demo.com",
+        "image": "/images/project-2-cover.jpg"
       },
       {
-        "title": "Tuberculosis-Detector-TBVIISION",
-        "description": "A machine learning model to detect tuberculosis from X-ray images.",
-        "technologies": ["Python", "PyTorch", "FastAPI"],
-        "github": "https://github.com/yourusername/tb-detector",
-        "image": "/images/project3.jpg"
+        "title": "Third Project",
+        "description": "Add details about your third project. Highlight unique features and technical challenges solved.",
+        "technologies": ["List", "Your", "Technologies"],
+        "github": "https://github.com/tomcomtang/minimalist-portfolio",
+        "site": "https://third-project-demo.com",
+        "image": "/images/project-3-cover.png"
       }
     ]
   },
@@ -176,7 +207,7 @@
     "info": {
       "email": "your.email@example.com",
       "phone": "+1 234 567 890",
-      "location": "New York, USA"
+      "location": "Your Location"
     },
     "social": [
       {
@@ -190,9 +221,14 @@
         "link": "https://linkedin.com/in/yourusername"
       },
       {
-        "name": "Twitter",
-        "icon": "twitter",
-        "link": "https://twitter.com/yourusername"
+        "name": "Medium",
+        "icon": "medium",
+        "link": "https://medium.com/yourusername"
+      },
+      {
+        "name": "Instagram",
+        "icon": "instagram",
+        "link": "https://instagram.com/yourusername"
       }
     ],
     "form": {
