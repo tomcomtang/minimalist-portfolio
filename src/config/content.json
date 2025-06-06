@@ -1,0 +1,205 @@
+{
+  "nav": {
+    "name": "Tomcom",
+    "menu": [
+      {
+        "text": "Home",
+        "link": "#home"
+      },
+      {
+        "text": "About",
+        "link": "#about"
+      },
+      {
+        "text": "Skills",
+        "link": "#skills"
+      },
+      {
+        "text": "Experience",
+        "link": "#experience"
+      },
+      {
+        "text": "Projects",
+        "link": "#projects"
+      },
+      {
+        "text": "Contact",
+        "link": "#contact"
+      }
+    ]
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Tomcom",
+    "title": "Full Stack Developer",
+    "description": "I'm a passionate full stack developer with expertise in building modern web applications. I love creating elegant solutions to complex problems."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a full stack developer with a passion for creating beautiful and functional web applications. I have experience in both front-end and back-end development, and I love learning new technologies and solving complex problems.",
+    "button": "Download CV"
+  },
+  "skills": {
+    "title": "My Skills",
+    "categories": [
+      {
+        "title": "Frontend",
+        "skills": [
+          {
+            "name": "HTML",
+            "image": "/images/html.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/images/css.png"
+          },
+          {
+            "name": "JavaScript",
+            "image": "/images/js.png"
+          },
+          {
+            "name": "React",
+            "image": "/images/react.png"
+          },
+          {
+            "name": "Next.js",
+            "image": "/images/nextjs.png"
+          }
+        ]
+      },
+      {
+        "title": "Backend",
+        "skills": [
+          {
+            "name": "Node.js",
+            "image": "/images/nodejs.png"
+          },
+          {
+            "name": "Express",
+            "image": "/images/express.png"
+          },
+          {
+            "name": "MongoDB",
+            "image": "/images/mongodb.png"
+          },
+          {
+            "name": "PostgreSQL",
+            "image": "/images/postgresql.png"
+          }
+        ]
+      },
+      {
+        "title": "Data Science",
+        "skills": [
+          {
+            "name": "Python",
+            "image": "/images/python.png"
+          },
+          {
+            "name": "TensorFlow",
+            "image": "/images/tensorflow.png"
+          },
+          {
+            "name": "PyTorch",
+            "image": "/images/pytorch.png"
+          },
+          {
+            "name": "Scikit-learn",
+            "image": "/images/scikit-learn.png"
+          }
+        ]
+      },
+      {
+        "title": "Tools",
+        "skills": [
+          {
+            "name": "Git",
+            "image": "/images/git.png"
+          },
+          {
+            "name": "Docker",
+            "image": "/images/docker.png"
+          },
+          {
+            "name": "VS Code",
+            "image": "/images/vscode.png"
+          }
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "timeline": [
+      {
+        "title": "Full Stack Developer",
+        "company": "Tech Company",
+        "period": "2022 - Present",
+        "description": "Developed and maintained web applications using React, Node.js, and MongoDB. Implemented new features and fixed bugs."
+      },
+      {
+        "title": "Frontend Developer",
+        "company": "Design Studio",
+        "period": "2020 - 2022",
+        "description": "Created responsive and interactive user interfaces using HTML, CSS, and JavaScript. Collaborated with designers and backend developers."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "title": "Code-Blog",
+        "description": "A blog platform for developers to share their knowledge and experiences.",
+        "technologies": ["React", "Node.js", "MongoDB"],
+        "github": "https://github.com/yourusername/code-blog",
+        "image": "/images/project1.jpg"
+      },
+      {
+        "title": "Visionary",
+        "description": "An AI-powered image recognition application.",
+        "technologies": ["Python", "TensorFlow", "React"],
+        "github": "https://github.com/yourusername/visionary",
+        "image": "/images/project2.jpg"
+      },
+      {
+        "title": "Tuberculosis-Detector-TBVIISION",
+        "description": "A machine learning model to detect tuberculosis from X-ray images.",
+        "technologies": ["Python", "PyTorch", "FastAPI"],
+        "github": "https://github.com/yourusername/tb-detector",
+        "image": "/images/project3.jpg"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "info": {
+      "email": "your.email@example.com",
+      "phone": "+1 234 567 890",
+      "location": "New York, USA"
+    },
+    "social": [
+      {
+        "name": "GitHub",
+        "icon": "github",
+        "link": "https://github.com/yourusername"
+      },
+      {
+        "name": "LinkedIn",
+        "icon": "linkedin",
+        "link": "https://linkedin.com/in/yourusername"
+      },
+      {
+        "name": "Twitter",
+        "icon": "twitter",
+        "link": "https://twitter.com/yourusername"
+      }
+    ],
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  }
+} 
