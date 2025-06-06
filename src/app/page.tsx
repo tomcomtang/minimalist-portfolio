@@ -102,7 +102,7 @@ export default function Home() {
       <section className="about" id="about">
         <div className="about-container">
           <div className="imgeffect">
-            <img src="/images/pic2.jpg" alt="" />
+            <img src={content.about.image} alt="" />
           </div>
           <div className="text">
             <p className="p1">Who Am I?</p>

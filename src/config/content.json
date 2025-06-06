@@ -29,15 +29,18 @@
     ]
   },
   "hero": {
-    "greeting": "Hello!",
+    "greeting": "Hi, I'm",
     "name": "Your Name",
-    "title": "This is my portfolio",
-    "description": "Write a brief introduction about yourself here. This will be displayed in the hero section."
+    "title": "Full Stack Developer",
+    "description": "I build exceptional and accessible digital experiences for the web.",
+    "image": "/images/avatar.png",
+    "resume": "/images/My_Resume.pdf"
   },
   "about": {
     "title": "About Me",
     "description": "Write a detailed description about yourself, your background, and your interests. This section helps visitors get to know you better.",
-    "button": "Download CV"
+    "button": "Download CV",
+    "image": "/images/avatar.png"
   },
   "skills": {
     "title": "My Skills",
@@ -177,28 +180,28 @@
     "title": "Projects",
     "items": [
       {
-        "title": "Project Name",
-        "description": "Write a brief description of your project. Explain what it does and what technologies you used.",
+        "title": "Project 1",
+        "description": "A brief description of your first project. Explain what it does and what technologies you used.",
         "technologies": ["List", "Your", "Technologies"],
-        "github": "https://github.com/tomcomtang/minimalist-portfolio",
-        "site": "https://your-project-demo.com",
-        "image": "/images/project-1-cover.jpg"
-      },
-      {
-        "title": "Another Project",
-        "description": "Describe another project. Include the problem it solves and your role in development.",
-        "technologies": ["List", "Your", "Technologies"],
-        "github": "https://github.com/tomcomtang/minimalist-portfolio",
-        "site": "https://another-project-demo.com",
+        "github": "https://github.com/yourusername/project1",
+        "site": "https://project1.com",
         "image": "/images/project-2-cover.jpg"
       },
       {
-        "title": "Third Project",
-        "description": "Add details about your third project. Highlight unique features and technical challenges solved.",
+        "title": "Project 2",
+        "description": "A brief description of your second project. Explain what it does and what technologies you used.",
         "technologies": ["List", "Your", "Technologies"],
-        "github": "https://github.com/tomcomtang/minimalist-portfolio",
-        "site": "https://third-project-demo.com",
+        "github": "https://github.com/yourusername/project2",
+        "site": "https://project2.com",
         "image": "/images/project-3-cover.png"
+      },
+      {
+        "title": "Project 3",
+        "description": "A brief description of your third project. Explain what it does and what technologies you used.",
+        "technologies": ["List", "Your", "Technologies"],
+        "github": "https://github.com/yourusername/project3",
+        "site": "https://project3.com",
+        "image": "/images/project-4-cover.jpg"
       }
     ]
   },

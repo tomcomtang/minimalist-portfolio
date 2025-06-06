@@ -318,6 +318,7 @@ header {
 .text{
   width: 650px;
   margin-left: 100px;
+  margin-top: 120px;
 }
 
 .text h2, .text p{
@@ -326,8 +327,9 @@ header {
 }
 
 .text .p1{
-  font-family: Patrick Hand, cursive;
-  margin-bottom: 6px;
+  font-size: 1.2rem;
+  color: #695aa6;
+  margin-bottom: 10px;
 }
 
 .text .p2{
@@ -1510,15 +1512,21 @@ p, span, div, h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .card-inner .box .icon .iconBox:hover {
   background: #695aa6;
+  transform: translateX(3px);
 }
 
 .card-inner .box .icon .iconBox img {
   width: 1.5rem;
   height: 1.5rem;
   filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.card-inner .box .icon .iconBox:hover img {
+  transform: translateX(2px);
 }
