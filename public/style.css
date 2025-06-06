@@ -1307,6 +1307,7 @@ body {
   font-size: 2.5rem;
   color: #fff;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 /* 标题字体 */
@@ -1415,4 +1416,8 @@ p, span, div, h1, h2, h3, h4, h5, h6 {
   height: 3px;
   background: #695aa6;
   border-radius: 2px;
+}
+
+.header-scrolled .navBar .name h1 {
+  color: #695aa6 !important;
 }
