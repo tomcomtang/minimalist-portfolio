@@ -334,10 +334,19 @@ header {
   margin-bottom: 16px;
 }
 
-.text h2{
+.text h2 {
   font-family: Leckerli One, sans-serif;
   margin-bottom: 16px;
+  text-align: left !important;
+  font-size: 20px;
+  color: black;
+  position: static;
 }
+
+.text h2::after {
+  display: none;
+}
+
 .text button {
   background-color: #695aa6;
   color: white;
@@ -428,15 +437,28 @@ header {
   margin-top: 0;
   color: black;
   margin-bottom: 30px;
-}
-
-.skillh1{
-  color: black;
+  position: relative;
 }
 
 .Skills .container .heading h1{
   padding: 0%;
   margin: 0%;
+}
+
+.Skills .container .heading h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #695aa6;
+  border-radius: 2px;
+}
+
+.skillh1{
+  color: black;
 }
 
 .Skills .container .mainSkill {
@@ -632,12 +654,27 @@ header {
   outline: none;
 }
 
-
-h1 {
+.expirience h1 {
+  font-size: 20px;
   text-align: center;
-  font-weight: 300;
+  font-family: Leckerli One, sans-serif;
+  font-weight: 600;
+  margin-top: 0;
   color: black;
-  font-family: 'Leckerli One', sans-serif;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.expirience h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #695aa6;
+  border-radius: 2px;
 }
 
 h1 span {
@@ -647,7 +684,7 @@ h1 span {
 .container-ex {
   width: 80%;
   padding: 50px 0;
-  margin: 50px auto;
+  margin: 30px auto;
   position: relative;
   overflow: hidden;
 }
@@ -752,7 +789,8 @@ h1 span {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: auto;
+  padding: 30px 0;
   background-color: #f9f9f9;
   font-weight: 400;
 }
@@ -768,6 +806,19 @@ h1 span {
   text-align: center;
   font-family: 'Leckerli One', sans-serif;
   font-size: 24px;
+  position: relative;
+}
+
+.main h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #695aa6;
+  border-radius: 2px;
 }
 
 .main a {
@@ -776,7 +827,7 @@ h1 span {
 }
 
 .container {
-  margin-top: 3em;
+  margin-top: 1.5em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 2rem;
@@ -1047,10 +1098,41 @@ body {
 
 .contact {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 40px;
   background-color: #f9f9f9;
+}
+
+.contact .main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.contact .main h1 {
+  font-size: 20px;
+  text-align: center;
+  font-family: Leckerli One, sans-serif;
+  font-weight: 600;
+  margin-top: 0;
+  color: black;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.contact .main h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #695aa6;
+  border-radius: 2px;
 }
 
 .contact-container {
@@ -1164,34 +1246,33 @@ body {
   color: #fff;
 }
 
-.Skills .container .heading h1 {
-  font-family: 'Caveat', cursive;
-  font-size: 2.5rem;
-  color: #000;
-}
-
-.expirience .container-ex .heading h1 {
-  font-family: 'Caveat', cursive;
-  font-size: 2.5rem;
-  color: #000;
-}
-
-.project .main h1 {
-  font-family: 'Caveat', cursive;
-  font-size: 2.5rem;
-  color: #000;
-}
-
-.blogs .main h1 {
-  font-family: 'Caveat', cursive;
-  font-size: 2.5rem;
-  color: #000;
-}
-
+.Skills .container .heading h1,
+.expirience h1,
+.project .main h1,
 .contact .main h1 {
-  font-family: 'Caveat', cursive;
-  font-size: 2.5rem;
-  color: #000;
+  font-size: 20px;
+  text-align: center;
+  font-family: Leckerli One, sans-serif;
+  font-weight: 600;
+  margin-top: 0;
+  color: black;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.Skills .container .heading h1::after,
+.expirience h1::after,
+.project .main h1::after,
+.contact .main h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #695aa6;
+  border-radius: 2px;
 }
 
 /* 全局字体设置 */
@@ -1230,9 +1311,8 @@ body {
 
 /* 标题字体 */
 .Skills .container .heading h1,
-.expirience .container-ex .heading h1,
+.expirience h1,
 .project .main h1,
-.blogs .main h1,
 .contact .main h1 {
   font-family: 'Quicksand', sans-serif !important;
   font-size: 2.5rem;
@@ -1241,18 +1321,18 @@ body {
 }
 
 .Skills .container .heading h1::after,
-.expirience .container-ex .heading h1::after,
+.expirience h1::after,
 .project .main h1::after,
-.blogs .main h1::after,
 .contact .main h1::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
   width: 50px;
   height: 3px;
-  background-color: #000;
+  background: #695aa6;
+  border-radius: 2px;
 }
 
 /* 按钮和链接字体 */
@@ -1274,21 +1354,22 @@ p, span, div, h1, h2, h3, h4, h5, h6 {
 
 .project-card .icon {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
+  bottom: 12px;
+  right: 12px;
+  width: 20px !important;
+  height: 20px !important;
   background: #282828;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  z-index: 1;
 }
 
 .project-card .icon .arrow-icon {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   transition: all 0.3s ease;
 }
 
@@ -1298,4 +1379,40 @@ p, span, div, h1, h2, h3, h4, h5, h6 {
 
 .project-card:hover .icon .arrow-icon {
   transform: translate(2px, -2px);
+}
+
+.Projects {
+  padding: 30px 0;
+  background-color: #f9f9f9;
+}
+
+.about .text h2,
+.Skills .container .heading h1,
+.expirience h1,
+.project .main h1,
+.contact .main h1 {
+  font-size: 20px;
+  text-align: center;
+  font-family: Leckerli One, sans-serif;
+  font-weight: 600;
+  margin-top: 0;
+  color: black;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.about .text h2::after,
+.Skills .container .heading h1::after,
+.expirience h1::after,
+.project .main h1::after,
+.contact .main h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #695aa6;
+  border-radius: 2px;
 }

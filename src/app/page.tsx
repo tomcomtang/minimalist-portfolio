@@ -250,7 +250,7 @@ export default function Home() {
 
       {/* Experience Section Html Code */}
       <section className="expirience" id="experience">
-        <h1>My <span>Experience</span></h1>
+        <h1 className="skillh1">Experience</h1>
         <div className="container-ex">
           <div className="timeline-block timeline-block-right">
             <div className="marker"></div>
@@ -358,6 +358,9 @@ export default function Home() {
 
       {/* Contact Section Html Code */}
       <section className="contact" id="contact">
+        <div className="main">
+          <h1>Contact</h1>
+        </div>
         <div className="contact-container">
           <div className="contact-info">
             <h2>Get In Touch</h2>
