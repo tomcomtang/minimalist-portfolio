@@ -338,16 +338,17 @@ header {
   font-family: Leckerli One, sans-serif;
   margin-bottom: 16px;
 }
-.text button{
-  width: 125px;
-  height: 37px;
-  padding: 6px 12px;
-  margin-top: 24px;
-  border-radius: 50px;
-  background: #695aa6;
+.text button {
+  background-color: #695aa6;
   color: white;
-  font-family: Patrick Hand, cursive;
-  font-size: 17px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+  min-width: 120px;
 }
 
 .imgeffect img{
@@ -887,6 +888,12 @@ h1 span {
   transition: 0.3s;
 }
 
+.card-inner .box .icon .iconBox i {
+  color: #fff;
+  font-size: 1.5rem;
+  transform: rotate(-45deg);
+}
+
 .card-inner .box .icon .iconBox span {
   color: #fff;
   font-size: 1.5rem;
@@ -1263,4 +1270,32 @@ input, textarea {
 /* 其他文本元素 */
 p, span, div, h1, h2, h3, h4, h5, h6 {
   font-family: 'Quicksand', sans-serif !important;
+}
+
+.project-card .icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #282828;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.project-card .icon .arrow-icon {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .icon {
+  background: #695aa6;
+}
+
+.project-card:hover .icon .arrow-icon {
+  transform: translate(2px, -2px);
 }

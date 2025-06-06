@@ -49,14 +49,17 @@ export default function Home() {
   return (
     <>
       <head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-        <link rel="stylesheet" href="/style.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
       </head>
       <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Leckerli+One&family=Lilita+One&family=Patrick+Hand&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
-      
+      <link href="/style.css" rel="stylesheet" />
+
       {/* Navbar Html Code  */}
       <header>
         <nav id="navBar" className="navBar">
@@ -290,8 +293,8 @@ export default function Home() {
                     <img src="/images/project-2-cover.jpg" alt="Project 1" />
                   </div>
                   <div className="icon">
-                    <a href="https://github.com/ArchitAgrawal25/Code-Blog" className="iconBox" target="_blank" rel="noopener noreferrer">
-                      <span className="material-symbols-outlined">arrow_outward</span>
+                    <a href="https://github.com/tomcomtang/Code-Blog" className="iconBox" target="_blank" rel="noopener noreferrer">
+                      <img src="/images/arrow.svg" alt="arrow" className="arrow-icon" />
                     </a>
                   </div>
                 </div>
@@ -312,8 +315,8 @@ export default function Home() {
                     <img src="/images/project-3-cover.png" alt="Project 2" />
                   </div>
                   <div className="icon">
-                    <a href="https://github.com/ArchitAgrawal25/Visionary" className="iconBox" target="_blank" rel="noopener noreferrer">
-                      <span className="material-symbols-outlined">arrow_outward</span>
+                    <a href="https://github.com/tomcomtang/Visionary" className="iconBox" target="_blank" rel="noopener noreferrer">
+                      <img src="/images/arrow.svg" alt="arrow" className="arrow-icon" />
                     </a>
                   </div>
                 </div>
@@ -334,8 +337,8 @@ export default function Home() {
                     <img src="/images/project-4-cover.jpg" alt="Project 3" />
                   </div>
                   <div className="icon">
-                    <a href="https://github.com/ArchitAgrawal25/Tuberculosis-Detector-TBVIISION" className="iconBox" target="_blank" rel="noopener noreferrer">
-                      <span className="material-symbols-outlined">arrow_outward</span>
+                    <a href="https://github.com/tomcomtang/Tuberculosis-Detector-TBVIISION" className="iconBox" target="_blank" rel="noopener noreferrer">
+                      <img src="/images/arrow.svg" alt="arrow" className="arrow-icon" />
                     </a>
                   </div>
                 </div>
