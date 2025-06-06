@@ -1,9 +1,50 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import content from '../config/content.json';
+import emailjs from '@emailjs/browser';
 
 export default function Home() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    
+    try {
+      await emailjs.send(
+        content.contact.emailjs.service_id,
+        content.contact.emailjs.template_id,
+        {
+          from_name: formData.get('name'),
+          from_email: formData.get('email'),
+          message: formData.get('message'),
+          to_email: content.contact.emailjs.to_email,
+        },
+        content.contact.emailjs.public_key
+      );
+      alert('Message sent successfully!');
+      form.reset();
+    } catch (error) {
+      alert('Failed to send message. Please try again.');
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
   useEffect(() => {
     // 处理滚动事件
     const handleScroll = () => {
@@ -236,7 +277,7 @@ export default function Home() {
             </div>
           </div>
           <div className="contact-form">
-            <form>
+            <form onSubmit={handleSubmit}>
               <label htmlFor="name">{content.contact.form.name}</label>
               <input type="text" id="name" name="name" required />
               <label htmlFor="email">{content.contact.form.email}</label>

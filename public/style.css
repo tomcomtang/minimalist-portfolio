@@ -1064,48 +1064,15 @@ body {
 }
 
 .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  background-color: #f9f9f9;
-}
-
-.contact .main {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.contact .main h1 {
-  font-size: 20px;
-  text-align: center;
-  font-family: Leckerli One, sans-serif;
-  font-weight: 600;
-  margin-top: 0;
-  color: black;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.contact .main h1::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 3px;
-  background: #695aa6;
-  border-radius: 2px;
+  padding: 80px 0;
+  background-color: #f5f5f5;
 }
 
 .contact-container {
   display: flex;
   width: 80%;
   max-width: 1200px;
+  margin: 0 auto;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1122,6 +1089,7 @@ body {
 .contact-info h2 {
   font-family: 'Leckerli One', sans-serif;
   margin-bottom: 20px;
+  font-size: 2rem;
 }
 
 .contact-info p {
@@ -1132,12 +1100,17 @@ body {
 .social-links {
   display: flex;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .social-links a img {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.1);
 }
 
 .contact-form {
@@ -1153,59 +1126,58 @@ body {
 .contact-form label {
   margin-bottom: 8px;
   font-weight: bold;
+  color: #333;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
 .contact-form button {
-  padding: 10px;
+  padding: 12px 24px;
   background-color: #695aa6;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
 .contact-form button:hover {
   background-color: #543d8d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Styles */
+.contact-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
+    width: 90%;
   }
 
-  .contact-info {
-    text-align: center;
-  }
-
-  .social-links {
-    justify-content: center;
-  }
-
+  .contact-info,
   .contact-form {
-    padding: 20px;
+    padding: 30px;
   }
 }
-
-@media (max-width: 480px) {
-  .contact-info p {
-    margin: 5px 0;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-  }
-}
-/* contact section CSS ends here  */
 
 .navBar .logo h1 {
   font-family: 'Caveat', cursive;
@@ -1529,4 +1501,100 @@ p, span, div, h1, h2, h3, h4, h5, h6 {
 
 .card-inner .box .icon .iconBox:hover img {
   transform: translateX(2px);
+}
+
+.contact-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.contact-form .success-message {
+  color: #28a745;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact-form .error-message {
+  color: #dc3545;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 40px;
+  background-color: #695aa6;
+  color: white;
+}
+
+.contact-info h2 {
+  font-family: 'Leckerli One', sans-serif;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-links a img {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-form {
+  flex: 2;
+  padding: 40px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #695aa6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #543d8d;
+}
+
+.contact-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }

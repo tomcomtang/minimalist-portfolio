@@ -206,7 +206,14 @@
     ]
   },
   "contact": {
-    "title": "Contact",
+    "title": "Contact Me",
+    "description": "Feel free to reach out to me for any questions or opportunities!",
+    "emailjs": {
+      "service_id": "YOUR_SERVICE_ID",
+      "template_id": "YOUR_TEMPLATE_ID",
+      "public_key": "YOUR_PUBLIC_KEY",
+      "to_email": "your-email@example.com"
+    },
     "info": {
       "email": "your.email@example.com",
       "phone": "+1 234 567 890",
