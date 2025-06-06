@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -21,7 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 50px;
   color: white;
   padding: 0 20px;
 }
@@ -358,16 +365,17 @@ header {
 .Skills{
   display: block;
   width: 100%;
-  margin-bottom: 30px;
   background-color: #f9f9f9;
 }
 
 .Skills .container{
   width: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  padding: 50px 0;
 }
 
 .Skills .container .heading{
@@ -375,9 +383,9 @@ header {
   text-align: center;
   font-family: Leckerli One, sans-serif;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 0;
   color: black;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .skillh1{
@@ -393,7 +401,7 @@ header {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 0;
   gap: 30px;
   justify-content: center;
 }
@@ -1081,3 +1089,66 @@ body {
   }
 }
 /* contact section CSS ends here  */
+
+.navBar .logo h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.hero .container .text h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.hero .container .text h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.hero .container .text p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.Skills .container .heading h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.expirience .container-ex .heading h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.project .main h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.blogs .main h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.contact .main h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #000;
+}

@@ -48,10 +48,14 @@ export default function Home() {
 
   return (
     <>
+      <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="/style.css" />
+      </head>
       <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Leckerli+One&family=Lilita+One&family=Patrick+Hand&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
-      <link href="/style.css" rel="stylesheet" />
       
       {/* Navbar Html Code  */}
       <header>
@@ -277,86 +281,73 @@ export default function Home() {
       {/* Projects Section Html Code */}
       <section className="project" id="projects">
         <div className="main">
-          <h2>My Projects</h2>
-          <a href="https://github.com/yourusername" target="_blank">View All Projects</a>
-        </div>
-        <div className="container">
-          <div className="card">
-            <div className="card-inner">
-              <div className="box">
-                <div className="imgBox">
-                  <img src="/images/pic2.jpg" alt="Project 1" />
-                </div>
-                <div className="icon">
-                  <div className="iconBox">
-                    <span className="material-symbols-outlined">add</span>
+          <h1>Projects</h1>
+          <div className="container">
+            <div className="card">
+              <div className="card-inner" style={{ '--clr': '#fff' } as React.CSSProperties}>
+                <div className="box">
+                  <div className="imgBox">
+                    <img src="/images/project-2-cover.jpg" alt="Project 1" />
+                  </div>
+                  <div className="icon">
+                    <a href="https://github.com/ArchitAgrawal25/Code-Blog" className="iconBox" target="_blank" rel="noopener noreferrer">
+                      <span className="material-symbols-outlined">arrow_outward</span>
+                    </a>
                   </div>
                 </div>
               </div>
+              <div className="content">
+                <h3>CodeBlog</h3>
+                <p>A platform for coders and programmers to share blogs on coding and software development.</p>
+                <ul>
+                  <a href="https://kdgehlot2003.github.io/Code-Blog/" target="_blank" rel="noopener noreferrer"><li className="site">visit site</li></a>
+                  <a href="https://github.com/ArchitAgrawal25/Code-Blog" target="_blank" rel="noopener noreferrer"><li className="github">github</li></a>
+                </ul>
+              </div>
             </div>
-            <div className="content">
-              <h3>E-commerce Platform</h3>
-              <p>A full-featured e-commerce platform built with React, Node.js, and MongoDB.</p>
-              <ul>
-                <li className="github">
-                  <a href="https://github.com/yourusername/project1" target="_blank">GitHub</a>
-                </li>
-                <li className="site">
-                  <a href="https://project1-demo.com" target="_blank">Live Demo</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-inner">
-              <div className="box">
-                <div className="imgBox">
-                  <img src="/images/pic2.jpg" alt="Project 2" />
-                </div>
-                <div className="icon">
-                  <div className="iconBox">
-                    <span className="material-symbols-outlined">add</span>
+            <div className="card">
+              <div className="card-inner" style={{ '--clr': '#fff' } as React.CSSProperties}>
+                <div className="box">
+                  <div className="imgBox">
+                    <img src="/images/project-3-cover.png" alt="Project 2" />
+                  </div>
+                  <div className="icon">
+                    <a href="https://github.com/ArchitAgrawal25/Visionary" className="iconBox" target="_blank" rel="noopener noreferrer">
+                      <span className="material-symbols-outlined">arrow_outward</span>
+                    </a>
                   </div>
                 </div>
               </div>
+              <div className="content">
+                <h3>Visionary</h3>
+                <p>A website that predicts crop diseases and identifies soil types to support smarter farming.</p>
+                <ul>
+                  <a href="https://visinory.netlify.app/" target="_blank" rel="noopener noreferrer"><li className="site">Visit Site</li></a>
+                  <a href="https://github.com/ArchitAgrawal25/Visionary" target="_blank" rel="noopener noreferrer"><li className="github">Github</li></a>
+                </ul>
+              </div>
             </div>
-            <div className="content">
-              <h3>Task Management App</h3>
-              <p>A collaborative task management application built with Django and React.</p>
-              <ul>
-                <li className="github">
-                  <a href="https://github.com/yourusername/project2" target="_blank">GitHub</a>
-                </li>
-                <li className="site">
-                  <a href="https://project2-demo.com" target="_blank">Live Demo</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-inner">
-              <div className="box">
-                <div className="imgBox">
-                  <img src="/images/pic2.jpg" alt="Project 3" />
-                </div>
-                <div className="icon">
-                  <div className="iconBox">
-                    <span className="material-symbols-outlined">add</span>
+            <div className="card">
+              <div className="card-inner" style={{ '--clr': '#fff' } as React.CSSProperties}>
+                <div className="box">
+                  <div className="imgBox">
+                    <img src="/images/project-4-cover.jpg" alt="Project 3" />
+                  </div>
+                  <div className="icon">
+                    <a href="https://github.com/ArchitAgrawal25/Tuberculosis-Detector-TBVIISION" className="iconBox" target="_blank" rel="noopener noreferrer">
+                      <span className="material-symbols-outlined">arrow_outward</span>
+                    </a>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="content">
-              <h3>Data Visualization Dashboard</h3>
-              <p>An interactive data visualization dashboard built with Python, Flask, and D3.js.</p>
-              <ul>
-                <li className="github">
-                  <a href="https://github.com/yourusername/project3" target="_blank">GitHub</a>
-                </li>
-                <li className="site">
-                  <a href="https://project3-demo.com" target="_blank">Live Demo</a>
-                </li>
-              </ul>
+              <div className="content">
+                <h3>TBVision</h3>
+                <p>A platform that predicts tuberculosis (TB) from chest X-rays for early and accurate diagnosis.</p>
+                <ul>
+                  <a href="https://tbvision.netlify.app/" target="_blank" rel="noopener noreferrer"><li className="site">visit site</li></a>
+                  <a href="https://github.com/ArchitAgrawal25/Tuberculosis-Detector-TBVIISION" target="_blank" rel="noopener noreferrer"><li className="github">github</li></a>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
