@@ -29,7 +29,7 @@
     ]
   },
   "hero": {
-    "greeting": "Hi, I'm",
+    "greeting": "Hi",
     "name": "Your Name",
     "title": "Full Stack Developer",
     "description": "I build exceptional and accessible digital experiences for the web.",
