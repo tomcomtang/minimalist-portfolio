@@ -104,7 +104,7 @@ export default function Home() {
 
       <header>
         <nav id="navBar" className="navBar">
-          <div className="name">
+          <div className="name" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <h1>{content.nav.name}</h1>
           </div>
           <div className="menu-toggle" id="menuToggle">

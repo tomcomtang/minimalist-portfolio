@@ -33,11 +33,17 @@ header {
   padding: 0 20px;
 }
 
-.name h1 {
-  font-size: 30px;
+.name {
   font-family: 'Leckerli One', sans-serif;
-  color: white;
-  transition: color 0.3s;
+  font-size: 1.5rem;
+  color: #695aa6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.name:hover {
+  transform: scale(1.05);
+  color: #543d8d;
 }
 
 .menu ul {
@@ -119,17 +125,17 @@ header {
 
 /* New CSS */
 .header-scrolled {
-  background-color: #fff; /* Change header background when scrolled */
+  background-color: #fff;
 }
 
-.header-scrolled .name h1,
-.header-scrolled .menu ul li a,
-.header-scrolled .menu ul li {
-  color: #695aa6; /* Change name color when scrolled */
+.header-scrolled .name,
+.header-scrolled #menu li a {
+  color: #695aa6;
 }
 
-.header-scrolled .menu-toggle .bar {
-  background-color: #695aa6; /* Change toggle button color when header is scrolled */
+.header-scrolled .name:hover,
+.header-scrolled #menu li a:hover {
+  color: #543d8d;
 }
 
 /* Navbar CSS ends here  */
@@ -1597,4 +1603,17 @@ p, span, div, h1, h2, h3, h4, h5, h6 {
 .contact-form button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+#menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+#menu li a:hover {
+  color: #695aa6;
+  transform: scale(1.05);
 }
