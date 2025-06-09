@@ -183,24 +183,24 @@
         "title": "Project 1",
         "description": "A brief description of your first project. Explain what it does and what technologies you used.",
         "technologies": ["List", "Your", "Technologies"],
-        "github": "https://github.com/yourusername/project1",
-        "site": "https://project1.com",
+        "github": "https://github.com/TencentEdgeOne",
+        "site": "https://github.com/TencentEdgeOne",
         "image": "/images/project-2-cover.jpg"
       },
       {
         "title": "Project 2",
         "description": "A brief description of your second project. Explain what it does and what technologies you used.",
         "technologies": ["List", "Your", "Technologies"],
-        "github": "https://github.com/yourusername/project2",
-        "site": "https://project2.com",
+        "github": "https://github.com/TencentEdgeOne",
+        "site": "https://github.com/TencentEdgeOne",
         "image": "/images/project-3-cover.png"
       },
       {
         "title": "Project 3",
         "description": "A brief description of your third project. Explain what it does and what technologies you used.",
         "technologies": ["List", "Your", "Technologies"],
-        "github": "https://github.com/yourusername/project3",
-        "site": "https://project3.com",
+        "github": "https://github.com/TencentEdgeOne",
+        "site": "https://github.com/TencentEdgeOne",
         "image": "/images/project-4-cover.jpg"
       }
     ]
@@ -216,29 +216,29 @@
     },
     "info": {
       "email": "your.email@example.com",
-      "phone": "+1 234 567 890",
+      "phone": "+86 188 1367 6461",
       "location": "Your Location"
     },
     "social": [
       {
         "name": "GitHub",
         "icon": "github",
-        "link": "https://github.com/yourusername"
+        "link": "https://github.com/TencentEdgeOne"
       },
       {
         "name": "LinkedIn",
         "icon": "linkedin",
-        "link": "https://linkedin.com/in/yourusername"
+        "link": "https://www.linkedin.com/company/tencentedgeone"
       },
       {
         "name": "Medium",
         "icon": "medium",
-        "link": "https://medium.com/yourusername"
+        "link": "https://medium.com/tencent-cloud/welcome-to-tencent-edgeone-e4eab9100ebc"
       },
       {
         "name": "Instagram",
         "icon": "instagram",
-        "link": "https://instagram.com/yourusername"
+        "link": "https://x.com/TencentCloudEO"
       }
     ],
     "form": {
