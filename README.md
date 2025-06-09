@@ -2,6 +2,12 @@
 
 一个简洁的个人作品集网站模板，使用 Next.js 构建。
 
+## 快速部署
+
+点击下方按钮，一键部署到腾讯云 EdgeOne：
+
+[![Deploy to Tencent Cloud](https://img.shields.io/badge/Deploy%20to-Tencent%20Cloud-blue)](https://console.tencentcloud.com/edgeone/pages/new?template=https://github.com/tomcomtang/minimalist-portfolio&output-directory=./out&build-command=npm%20run%20build&install-command=npm%20install)
+
 ## 特点
 
 - 响应式设计
@@ -14,7 +20,7 @@
 1. 克隆仓库：
 
 ```bash
-git clone https://github.com/yourusername/minimalist-portfolio.git
+git clone https://github.com/tomcomtang/minimalist-portfolio
 cd minimalist-portfolio
 ```
 
