@@ -34,7 +34,7 @@
     "title": "Full Stack Developer",
     "description": "I build exceptional and accessible digital experiences for the web.",
     "image": "/images/avatar.png",
-    "resume": "/images/My_Resume.pdf"
+    "resume": "https://technical-resume.edgeone.app/"
   },
   "about": {
     "title": "About Me",
