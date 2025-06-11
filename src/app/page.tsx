@@ -149,7 +149,7 @@ export default function Home() {
             <p className="p1">Who Am I?</p>
             <h2>{content.about.title}</h2>
             <p className="p2">{content.about.description}</p>
-            <a href="/images/My_Resume.pdf" target="_blank"><button>{content.about.button}</button></a>
+            <a href={content.hero.resume} target="_blank"><button>{content.about.button}</button></a>
           </div>
         </div>
       </section>
