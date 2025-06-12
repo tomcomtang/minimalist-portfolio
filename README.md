@@ -1,143 +1,143 @@
 # Minimalist Portfolio
 
-一个简洁的个人作品集网站模板，使用 Next.js 构建。
+A clean and minimalist portfolio website template built with Next.js.
 
-## 快速部署
+## Quick Deploy
 
-点击下方按钮，一键部署到腾讯云 EdgeOne：
+Click the button below to deploy to Tencent Cloud EdgeOne with one click:
 
 [![Deploy to Tencent Cloud](https://img.shields.io/badge/Deploy%20to-Tencent%20Cloud-blue)](https://console.tencentcloud.com/edgeone/pages/new?template=https://github.com/tomcomtang/minimalist-portfolio&output-directory=./out&build-command=npm%20run%20build&install-command=npm%20install)
 
-## 特点
+## Features
 
-- 响应式设计
-- 可配置的内容
-- 现代化的 UI/UX
-- 易于定制
+- Responsive design
+- Configurable content
+- Modern UI/UX
+- Easy to customize
 
-## 快速开始
+## Quick Start
 
-1. 克隆仓库：
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/tomcomtang/minimalist-portfolio
 cd minimalist-portfolio
 ```
 
-2. 安装依赖：
+2. Install dependencies:
 
 ```bash
 npm install
 ```
 
-3. 修改配置文件：
-   编辑 `src/config/content.json` 文件，更新你的个人信息、项目、技能等内容。
+3. Modify configuration:
+   Edit the `src/config/content.json` file to update your personal information, projects, skills, and other content.
 
-4. 运行开发服务器：
+4. Run development server:
 
 ```bash
 npm run dev
 ```
 
-5. 构建生产版本：
+5. Build for production:
 
 ```bash
 npm run build
 ```
 
-## 配置文件说明
+## Configuration File Guide
 
-所有的网站内容都可以在 `src/config/content.json` 文件中配置。配置文件包含以下部分：
+All website content can be configured in the `src/config/content.json` file. The configuration file includes the following sections:
 
-### 导航栏 (nav)
+### Navigation Bar (nav)
 
-- `name`: 网站名称
-- `menu`: 导航菜单项列表
+- `name`: Website name
+- `menu`: Navigation menu items list
 
-### 首页 (hero)
+### Homepage (hero)
 
-- `greeting`: 问候语
-- `name`: 你的名字
-- `title`: 你的职位
-- `description`: 简短描述
+- `greeting`: Greeting message
+- `name`: Your name
+- `title`: Your position
+- `description`: Brief description
 
-### 关于 (about)
+### About (about)
 
-- `title`: 标题
-- `description`: 关于你的描述
-- `button`: 下载简历按钮文本
+- `title`: Section title
+- `description`: Description about you
+- `button`: Resume download button text
 
-### 技能 (skills)
+### Skills (skills)
 
-- `title`: 技能部分标题
-- `categories`: 技能分类列表
-  - 每个分类包含 `title` 和 `skills` 数组
-  - 每个技能包含 `name` 和 `image` 路径
+- `title`: Skills section title
+- `categories`: Skills categories list
+  - Each category includes `title` and `skills` array
+  - Each skill includes `name` and `image` path
 
-### 经验 (experience)
+### Experience (experience)
 
-- `title`: 经验部分标题
-- `timeline`: 经验时间线列表
-  - 每个经验包含 `title`、`company`、`period` 和 `description`
+- `title`: Experience section title
+- `timeline`: Experience timeline list
+  - Each experience includes `title`, `company`, `period`, and `description`
 
-### 项目 (projects)
+### Projects (projects)
 
-- `title`: 项目部分标题
-- `items`: 项目列表
-  - 每个项目包含 `title`、`description`、`technologies`、`github` 链接和 `image` 路径
+- `title`: Projects section title
+- `items`: Projects list
+  - Each project includes `title`, `description`, `technologies`, `github` link, and `image` path
 
-### 联系 (contact)
+### Contact (contact)
 
-- `title`: 联系部分标题
-- `info`: 联系信息
-  - `email`: 邮箱地址
-  - `phone`: 电话号码
-  - `location`: 位置
-- `social`: 社交媒体链接列表
-  - 每个链接包含 `name`、`icon` 和 `link`
-- `form`: 联系表单文本
-  - `name`: 名字输入框标签
-  - `email`: 邮箱输入框标签
-  - `message`: 消息输入框标签
-  - `submit`: 提交按钮文本
-- `emailjs`: EmailJS 配置
-  - `service_id`: EmailJS 服务 ID（从 EmailJS 控制面板获取）
-  - `template_id`: EmailJS 模板 ID（从 EmailJS 控制面板获取）
-  - `public_key`: EmailJS 公钥（从 EmailJS 控制面板获取）
-  - `to_email`: 接收邮件的邮箱地址
+- `title`: Contact section title
+- `info`: Contact information
+  - `email`: Email address
+  - `phone`: Phone number
+  - `location`: Location
+- `social`: Social media links list
+  - Each link includes `name`, `icon`, and `link`
+- `form`: Contact form text
+  - `name`: Name input label
+  - `email`: Email input label
+  - `message`: Message input label
+  - `submit`: Submit button text
+- `emailjs`: EmailJS configuration
+  - `service_id`: EmailJS service ID (obtain from EmailJS dashboard)
+  - `template_id`: EmailJS template ID (obtain from EmailJS dashboard)
+  - `public_key`: EmailJS public key (obtain from EmailJS dashboard)
+  - `to_email`: Recipient email address
 
-## EmailJS 配置说明
+## EmailJS Configuration Guide
 
-1. 注册 [EmailJS](https://www.emailjs.com/) 账号
-2. 创建 Email Service（邮件服务）：
-   - 登录后点击 "Email Services"
-   - 点击 "Add New Service"
-   - 选择邮件服务商（如 Gmail、Outlook 等）
-   - 按照步骤连接您的邮箱账号
-   - 完成后会得到一个 `Service ID`
-3. 创建 Email Template（邮件模板）：
-   - 点击 "Email Templates"
-   - 点击 "Create New Template"
-   - 设计邮件模板，可以使用以下变量：
-     - `{{from_name}}` - 发送者姓名
-     - `{{from_email}}` - 发送者邮箱
-     - `{{message}}` - 消息内容
-     - `{{to_email}}` - 接收者邮箱
-   - 保存后会得到一个 `Template ID`
-4. 获取 Public Key：
-   - 在 EmailJS 控制面板的 "Account" 页面
-   - 找到 "API Keys" 部分
-   - 复制 `Public Key`
-5. 在 `src/config/content.json` 中配置这些信息
+1. Register for an [EmailJS](https://www.emailjs.com/) account
+2. Create an Email Service:
+   - After logging in, click "Email Services"
+   - Click "Add New Service"
+   - Choose an email provider (e.g., Gmail, Outlook)
+   - Follow the steps to connect your email account
+   - You'll receive a `Service ID` upon completion
+3. Create an Email Template:
+   - Click "Email Templates"
+   - Click "Create New Template"
+   - Design your email template using these variables:
+     - `{{from_name}}` - Sender's name
+     - `{{from_email}}` - Sender's email
+     - `{{message}}` - Message content
+     - `{{to_email}}` - Recipient's email
+   - Save to get a `Template ID`
+4. Get Public Key:
+   - Go to the "Account" page in EmailJS dashboard
+   - Find the "API Keys" section
+   - Copy the `Public Key`
+5. Configure these details in `src/config/content.json`
 
-## 自定义样式
+## Customizing Styles
 
-所有的样式都在 `public/style.css` 文件中。你可以根据需要修改颜色、字体、间距等。
+All styles are in the `public/style.css` file. You can modify colors, fonts, spacing, and more according to your needs.
 
-## 贡献
+## Contributing
 
-欢迎提交 Pull Request 或创建 Issue。
+Pull requests and issues are welcome.
 
-## 许可
+## License
 
 MIT License
