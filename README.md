@@ -45,6 +45,10 @@ npm run dev
 npm run build
 ```
 
+## Live Demo
+
+[View the live demo here](https://minimalist-portfolio.edgeone.app/)
+
 ## Configuration File Guide
 
 All website content can be configured in the `src/config/content.json` file. The configuration file includes the following sections:
