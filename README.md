@@ -6,7 +6,7 @@ A clean and minimalist portfolio website template built with Next.js.
 
 Click the button below to deploy to Tencent Cloud EdgeOne with one click:
 
-[![Deploy to Tencent Cloud](https://img.shields.io/badge/Deploy%20to-Tencent%20Cloud-blue)](https://console.tencentcloud.com/edgeone/pages/new?template=https://github.com/tomcomtang/minimalist-portfolio&output-directory=./out&build-command=npm%20run%20build&install-command=npm%20install)
+[![Deploy to Tencent Cloud](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?template=https://github.com/tomcomtang/minimalist-portfolio&output-directory=./out&build-command=npm%20run%20build&install-command=npm%20install)
 
 ## Features
 
