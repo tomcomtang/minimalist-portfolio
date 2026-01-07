@@ -575,7 +575,7 @@ header {
 
 .Skills .container .mainSkill .tools .toolsSkill {
   width: 100%;
-  max-width: 200px; /* 限制最大宽度，确保卡片大小一致 */
+  max-width: 200px; /* Limit max width to ensure consistent card size */
 }
 
 @media (max-width: 768px) {
@@ -1220,12 +1220,12 @@ body {
   border-radius: 2px;
 }
 
-/* 全局字体设置 */
+/* Global font settings */
 * {
   font-family: 'Quicksand', sans-serif !important;
 }
 
-/* Hero 区域字体 */
+/* Hero section fonts */
 .hero-container .down {
   font-family: 'Quicksand', sans-serif !important;
   font-size: 3.5rem;
@@ -1246,7 +1246,7 @@ body {
   font-weight: 500;
 }
 
-/* 导航栏字体 */
+/* Navigation bar fonts */
 .navBar .name h1 {
   font-family: 'Quicksand', sans-serif !important;
   font-size: 2.5rem;
@@ -1255,7 +1255,7 @@ body {
   transition: color 0.3s ease;
 }
 
-/* 标题字体 */
+/* Heading fonts */
 .Skills .container .heading h1,
 .expirience h1,
 .project .main h1,
@@ -1281,19 +1281,19 @@ body {
   border-radius: 2px;
 }
 
-/* 按钮和链接字体 */
+/* Button and link fonts */
 button, a {
   font-family: 'Quicksand', sans-serif !important;
   font-weight: 500;
 }
 
-/* 输入框字体 */
+/* Input field fonts */
 input, textarea {
   font-family: 'Quicksand', sans-serif !important;
   font-weight: 400;
 }
 
-/* 其他文本元素 */
+/* Other text elements */
 p, span, div, h1, h2, h3, h4, h5, h6 {
   font-family: 'Quicksand', sans-serif !important;
 }
