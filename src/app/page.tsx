@@ -46,7 +46,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    // 处理滚动事件
+    // Handle scroll event
     const handleScroll = () => {
       const header = document.querySelector('header');
       if (header) {
@@ -58,13 +58,13 @@ export default function Home() {
       }
     };
 
-    // 处理菜单点击
+    // Handle menu click
     const handleMenuClick = () => {
       const menu = document.querySelector('.menu');
       menu?.classList.toggle('active');
     };
 
-    // 处理平滑滚动
+    // Handle smooth scroll
     const handleSmoothScroll = (e: Event) => {
       const target = e.target as HTMLElement;
       if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
@@ -75,12 +75,12 @@ export default function Home() {
       }
     };
 
-    // 添加事件监听器
+    // Add event listeners
     window.addEventListener('scroll', handleScroll);
     document.querySelector('.menu-toggle')?.addEventListener('click', handleMenuClick);
     document.querySelector('.menu')?.addEventListener('click', handleSmoothScroll);
 
-    // 清理函数
+    // Cleanup function
     return () => {
       window.removeEventListener('scroll', handleScroll);
       document.querySelector('.menu-toggle')?.removeEventListener('click', handleMenuClick);
